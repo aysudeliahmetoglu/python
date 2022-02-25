@@ -11,4 +11,4 @@ a={"sayılar":{1,2,3,4},"meyveler":{"elma","armut","portakal"}}  #nested diction
 print(a)
 print(sözlük1.keys())  #to print key values
 print(sözlük1.values()) #to print values
-print(sözlük1.items()) #to print in tupples
+print(sözlük1.items()) #to print  in tupples
