@@ -1,4 +1,4 @@
-#kullanıcıdan girdi alma.
+#getting input from user
 a=input("lütfen bir sayı giriniz: ")
 print(a)
 b=int(input("okul numaranızı girin: ")) #conversion data type.
