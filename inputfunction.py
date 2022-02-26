@@ -1,20 +1,20 @@
 #getting input from user
-a=input("lütfen bir sayı giriniz: ")
+a=input("please enter number: ")
 print(a)
-b=int(input("okul numaranızı girin: ")) #conversion data type.
-print("öğrencinin okul numarası:",b)
-isim=input("lütfen isminizi giriniz:")
-print("isminiz ",isim)
+b=int(input("please enter school number:"))# conversion data type.
+print("school number is :",b)
+isim=input("please enter your name:")
+print("your name is ",isim)
 # printing the sum of 3 numbers received from the user to the screen.
-x=int(input("lütfen 1.sayıyı giriniz: "))
-y=int(input("lütfen 2.sayıyı giriniz: "))
-z=int(input("lütfen 3.sayıyı giriniz: "))
-print("girilen 3 sayının toplamı :" ,x+y+z)
+x=int(input("please enter first number: "))
+y=int(input("please enter second number: "))
+z=int(input("please enter third number: "))
+print("sum of 3 numbers :" ,x+y+z)
 #if string is entered instead of int as input, user should be warned.
 try:
     a=int(input("a:"))
     
 except ValueError:
-    print("lütfen inputu doğru formatta giriniz!")
+    print("please enter the input in the correct format!")
 
 
