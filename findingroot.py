@@ -1,12 +1,3 @@
-#player registration program
-name=input("player name: ")
-surname=input("player surname: ")
-team=input("player team:  ")
-information=[name,surname,team]
-print("information is being saved")
-print("player name:{}\nplayer surname: {}\nplayer team{}".format(information[0],information[1],information[2]))
-print("information saved")
-
 #Finding the root of a 2nd degree equation with one unknown
 #equation = ax^2 + bx + c
 #delta =b ** 2 - 4 * a * c
