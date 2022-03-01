@@ -8,6 +8,3 @@
 #not operator
 2==2 #true
 not 2==2 #false
-
-
- 
