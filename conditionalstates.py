@@ -1,7 +1,7 @@
 #if-else
-yas=int(input("please enter your age"))
+age=int(input("please enter your age"))
 
-if(yas < 18):
+if(age < 18):
     print("you cannot enter this place!")
 else:
     print("welcome this place!") 
