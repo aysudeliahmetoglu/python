@@ -7,3 +7,25 @@ print(4 in (1,2,3,4,5)) #true (searching in tupple)
 list=[1,2,3,4,5]
 for element in list:
     print(element)
+
+sum=0
+list=[1,2,3,4,5,6,7,8,9]
+for element in list:
+    sum=sum+element
+    print("sum:{} element:{}".format(sum,element))
+print(sum)
+#printing even numbers to the screen
+list=[1,2,23,45,67,87,44,22,26]
+for element in list:
+    if element % 2==0:
+     print(element)    
+
+s="I am learning Python" 
+for char in s:
+    print(char)
+    
+
+s="I am learning Python" 
+for char in s:
+    print(char*3)
+    
