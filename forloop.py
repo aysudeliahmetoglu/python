@@ -28,4 +28,12 @@ for char in s:
 s="I am learning Python" 
 for char in s:
     print(char*3)
-    
+
+#using dictionary with for loop
+dictionary1={"one":1,"two":2,"three":3}
+for element in dictionary1.keys():
+    print(element)
+for element in dictionary1.values():
+    print(element)
+for element in dictionary1.items():
+    print(element)
