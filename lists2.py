@@ -33,15 +33,24 @@ print(found)
 
 
 vowels=['a','e','i','o','u']
-word=input("Provide a word to search for vowels")
+word=input("Provide a word to search for vowels: ")
 found=[]
 for letter in word:
     if letter in vowels:
         if letter not in found:
             found.append(letter)
-for vowels in word:
-    print(vowels)            
+           
+for vowel in found:
+    print(vowel)            
 
+
+#remove
+nums=[1,2,3,4,5,9,7,8]
+nums.remove(3) #this is not index value,ıt is value to remove 
+print(nums)
+
+nums.pop()    #to remove last item in list
+print(nums) 
 
   
 
