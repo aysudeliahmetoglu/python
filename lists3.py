@@ -5,7 +5,7 @@ nums.insert(3,7)
 print(nums)
 nums.insert(2,"two-and-half")
 print(nums)
-# print(help(list.append))   #To get information about the use of the method
+print(help(list.append))   #To get information about the use of the method
 
 phrase="Don't panic!"
 plist=list(phrase)
