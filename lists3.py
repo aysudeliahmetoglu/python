@@ -11,29 +11,14 @@ phrase="Don't panic!"
 plist=list(phrase)
 print(phrase)
 print(plist)
-# list1=[]
-# plist.pop()
-# print(plist)
-# plist.insert(0,"on tap")
-# list1.append('o')
-# list1.append('n')
-# list1.append('t')
-# list1.append('a')
-# list1.append('p')
-# print(plist)
-for letter in plist:
-    if letter == "Don'panic!":
-        plist.remove(letter)
-print(plist)     
+
+for letter in plist[0:4]:
+    plist.pop()
+plist.pop(0)
+plist.remove("'")    
+plist.extend([plist.pop(),plist.pop()])
+plist.insert(2,plist.pop(3))
+    
+new_phrase=''.join(plist)
 print(plist)
-
-# for letter  in list1:
-#     plist
-   
-        
-
-
-
-# new_phrase=''.join(plist)
-# print(plist)
-# print(new_phrase)
+print(new_phrase)
