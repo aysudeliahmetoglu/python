@@ -2,8 +2,7 @@
 import instaloader
 
 # Login or load session
-username = "denemeaccount4"
-password = "pythoncalisma"
+
 L = instaloader.Instaloader()
 L.login(username, password)
 
@@ -16,9 +15,9 @@ for followee in profile.get_followers():
     follow_list = []
     count = 0
     follow_list.append(followee.username)
-    file = open("hsdyalovatakipci.txt", "a+")
-    file.write(follow_list[count])
-    file.write("\n")
-    file.close()
+    # file = open("hsdyalovatakipci.txt", "a+")
+    # file.write(follow_list[count])
+    # file.write("\n")
+    # file.close()
     print(follow_list[count])
     count = count + 1
