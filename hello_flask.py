@@ -1,5 +1,5 @@
 from flask import Flask
-
+from vsearch import search4letters
 
 app=Flask(__name__)
 
@@ -13,8 +13,9 @@ def F()->str:
 
 @app.route("/search4") 
 def do_search()->str:
-    pass
-
+    res= str(search4letters("bir phrase gönderiyoruz","aeiöuüı"))
+    print(res)
+    return res
 
 
 

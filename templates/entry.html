@@ -1,0 +1,17 @@
+{%extends "base.html"%}
+{%block body%}
+<h2>{{the_title}}</h2>
+<p>Hello world</p>
+
+<form action="/search4" method="post">
+    <p>Phrase:</p>
+    <p><input type="text" name="phrase"></p>
+    <p>Letters:</p>
+    <p><input type="text" name="letters" value="aeiöuüı" ></p>
+    <p><input type="submit" value="Search"></p>
+
+</form>
+
+
+
+{%endblock%}
