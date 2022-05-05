@@ -1,28 +1,20 @@
-#Prime numbers are numbers that are only divisible by 1 and itself.
-
-# print(*range(2,number))
-
-
+# Prime numbers are numbers that are only divisible by 1 and itself.
 def isItPrime(number):
-    if (number == 1 ):
-     return False
-    elif (number == 2):
+    if (number > 1):
+        for i in range(2, number):
+            if not number % i:
+                return False          
         return True
-    else:
-       for i in  range(2,number):
-            if (number % i == 0):
-               return False
-            
-            return True
-
+    return False
 
 while True:
+    # number = "2"
     number=input("please enter number: ")
     if(number == "q"):
         break
-    else:
-        number = int(number)    
-        if(isItPrime(number)):
-            print("this number is prime")
-        else:
-            print("this number is not prime")    
+    number = int(number)
+    if(isItPrime(number)):
+        print("this number is prime")
+        continue
+    print("this number is not prime")
+
