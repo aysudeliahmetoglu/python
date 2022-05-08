@@ -1,11 +1,18 @@
-# Prime numbers are numbers that are only divisible by 1 and itself.
-def isItPrime(number):
-    if (number > 1):
-        for i in range(2, number):
-            if not number % i:
-                return False          
-        return True
-    return False
+
+def isItPrime(n: int) -> bool:
+    """ """
+    if n <= 3:
+        return n > 1
+    if not n%2 or not n%3:
+        return False
+    i = 5
+    stop = int(n**0.5)
+    while i <= stop:
+        if not n%i or not n%(i + 2):
+            return False
+        i += 6
+    return True
+
 
 while True:
     # number = "2"
@@ -16,5 +23,4 @@ while True:
     if(isItPrime(number)):
         print("this number is prime")
         continue
-    print("this number is not prime")
-
+    print("this number is not prime")    
